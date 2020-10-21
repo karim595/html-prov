@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Bootstrap lab del 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+       
+    </head>
+    <body style="background-color: white;">
+    
+    <div class="container">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Meny</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="mini.html">Stockhom kommun</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nacka kommun</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Botkyrka kommun</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<br>
+    <section class="mb-4">
+
+    <!--Section heading-->
+    <h4 class="h1-responsive font-weight-bold text-center my-4">Du kontackta i dem komuuner som finns nedan.</h4>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Det finns vissa kommuner om du vill söka studentlagenhet eller flytta till nån annan kommu.</p>
+
+        <!--Grid column-->
+        <div class=""
+        <div class="col-md-4 mb-md-0 mb-2">
+            <form id="contact-form" name="contact-form" action="" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    
+                    <!---->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <label for="email" class="">Ditt namn</label>
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="name" class="">Ditt address</label>
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="subject" class="">Epost</label>
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                     <div class="col-md-6">
+                        <label for="name" class="">Ditt Mobilnummer</label>
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    
+                     <div class="col-md-6">
+                        <label for="name" class="">Ditt address</label>
+                         <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                         </div>
+                     <p>Du kan välja flera kommun som finns i den närmaste området:</p>
+                    <div class="col-md-6">
+                         <form action="/action_page.php">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                          <label class="custom-control-label" for="customCheck">Stockhol kommun</label>
+                        </div>
+                        <input type="checkbox" id="defaultCheck" name="example2">
+                        <label for="defaultCheck">Botkyrka kommun</label>
+                        <input type="checkbox" id="defaultCheck" name="example2">
+                         <label for="defaultCheck">Nacka kommun</label>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+</section>
+      </div>  
+    
+    </body>
+</html>
